@@ -93,6 +93,7 @@ Start profile
 .profile{
     
     height: 600px;
+    margin-bottom: 20px;
     
 }
 
@@ -160,11 +161,21 @@ End Social
 Start  About ME
 ---------------*/
 .about-me{
-    
+    height: auto;
+    border: none;
+}
+.about-me:hover{
+    box-shadow: none;
 }
 
 .aboutme-image{
+    
+    border-radius: 20px;
+    
+}
 
+.aboutme-image:hover{
+    box-shadow: 0 4px 8px 5px black;
 }
 
 .aboutme-image img{
@@ -184,10 +195,61 @@ Start  About ME
 }
 
 .aboutme-desc{
-    
+    border-radius: 20px;
+}
+
+.aboutme-desc:hover{
+    box-shadow: 0 4px 8px 5px black;
 }
 
 
 /*---------------
 End  About ME
 ---------------*/
+
+/*---------------
+Start  professional-experience
+---------------*/
+.professional-experience{
+    width: 100%;
+    padding-left: 100px;
+}
+
+.work-experience{
+    width: 30%;
+    margin: 0 10px;
+}
+
+.education{
+    width: 30%;
+    margin: 0 10px;
+}
+
+.skill-container{
+    width: 30%;
+    margin: 0 10px;
+}
+
+
+
+/*---------------
+Start Skill
+---------------*/
+.skill-container{
+    
+}
+
+.skill-container ul{
+    
+}
+
+
+.skill-container ul li{
+    
+}
+
+
+/*---------------
+End Skill
+---------------*/
+

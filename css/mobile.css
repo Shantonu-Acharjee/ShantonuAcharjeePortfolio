@@ -149,9 +149,15 @@ Start profile
     object-fit: cover;
     background-image:linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(../Photo/Shantonu\ with\ DSLR.jpg);
     background-repeat: no-repeat;
-    box-shadow: 5px -5px 5px greenyellow;
+    border: solid 3px;
     
     
+    
+    
+}
+
+.profile:hover{
+    box-shadow: 0 4px 8px 5px black;
 }
 
 
@@ -176,6 +182,7 @@ Start profile
     content: '';
     display: table;
     clear: both;
+    
 }
 /*---------------
 End profile
@@ -192,6 +199,8 @@ Start Social
     margin: 0 auto;
     padding: 0;
     background-color: violet;
+    overflow: hidden;
+    display: none;
 }
 
 .social ul{
@@ -237,12 +246,34 @@ End Social
 /*---------------
 Start  About ME
 ---------------*/
+
+.aboutme-Dad{
+    background-color: rgb(144, 55, 100);
+    padding: 20px;
+    
+}
 .about-me{
-    background-color: #39a4ac;
-    padding: 1% 7%;
+    
+    padding: 20px;
     color: white;
     text-align: center;
-    box-shadow: 5px -5px 5px greenyellow;
+    height: 700px;
+    overflow: auto;
+    border: 3px solid black;
+    border-radius: 20px;
+
+    
+    
+
+}
+
+.about-me:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+
+
+.about-me-data{
+    
 }
 
 .about-me h2{
@@ -269,10 +300,10 @@ Start  About ME
 
 .aboutme-image p{
     font-size: 16px;
-    color: wheat;
+    color: black;
     width: 100%;
     margin: 0 auto;
-    text-align: justify;
+    text-align: center;
     padding:20px 0;
     line-height: 18px;
 }
@@ -282,14 +313,20 @@ Start  About ME
 }
 
 .cv-button{
-    background-color: #052d2f;
+    background-color: transparent;
     color: white;
-    border: none;
+    border: 3px solid black;
     border-radius: 15px;
     padding: 15px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
-    align-items: center;
+    width: 100%;
+    
+    
+}
+
+.cv-button:hover{
+    box-shadow: 0 4px 8px 3px black;
 }
 
 .about-me::after{
@@ -304,6 +341,246 @@ End  About ME
 
 
 
+
+
+/*---------------
+Start  professional-experience
+---------------*/
+
+.professional-experience{
+    padding: 20px;
+    background-color: rebeccapurple;
+    
+}
+
+.work-experience{
+    max-height: 100%;
+    border: solid 3px;
+    border-radius: 20px;
+    overflow: auto;
+
+    margin-bottom: 20px;
+}
+
+.work-experience:hover{
+    box-shadow: 0 4px 8px 5px black;
+    
+}
+
+.work-experience .card{
+    
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    
+}
+
+.card:hover{
+    
+}
+
+.card-icon{
+
+}
+
+
+.card-icon i{
+    width: 100%;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+
+    transition: 3s;
+}
+
+.card-icon i:hover{
+    
+    text-shadow: 0 4px 8px  black;
+    transform: rotate(360deg);
+}
+
+.card-title{
+
+}
+
+.card-title h2{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+.card desc{
+    
+}
+
+
+.education{
+    border: 3px solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+.education:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+
+
+/*---------------
+Start Skill
+---------------*/
+.skill-container{
+    max-height: 100%;
+    overflow: auto;
+    padding: 20px;
+    border: 3px solid;
+    border-radius: 20px;
+
+    
+    
+}
+
+.skill-container:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.skill-container:hover.skill-container ul li::after{
+    animation-iteration-count: infinite;
+}
+
+.skill-container ul{
+    
+}
+
+
+.skill-container ul li{
+    list-style-type: none;
+    margin: 50px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 5px;
+}
+
+.skill-container ul li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: indigo;
+
+    width: 100%;
+    height: 25px;
+    border-radius: 20px;
+
+    
+}
+
+
+
+
+.skill-container ul li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: rgb(225, 214, 233);
+
+    
+    height: 25px;
+    border-radius: 20px;
+    width: 0;
+
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    /*animation-iteration-count: infinite;*/
+    animation-direction: forward;
+    animation-fill-mode: forwards;
+       
+}
+
+.skill-container ul li.arduinoPro::after{
+    animation-name: arduinoPro;
+}
+
+@keyframes arduinoPro{
+    to{
+        width: 70%;
+    }
+}
+
+
+
+.skill-container ul li.python::after{
+    animation-name: python;
+}
+
+@keyframes python{
+    to{
+        width: 60%;
+    }
+}
+
+
+
+.skill-container ul li.cpp::after{
+    animation-name: cpp;
+}
+
+@keyframes cpp{
+    to{
+        width: 50%;
+    }
+}
+
+
+.skill-container ul li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 80%;
+    }
+}
+
+
+
+.skill-container ul li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 70%;
+    }
+}
+
+
+.skill-container ul li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 20%;
+    }
+}
+
+/*---------------
+End Skill
+---------------*/
+
+.professional-experience::after{
+    content: '';
+    display: table;
+    clear: both;
+    
+}
+
+/*---------------
+End  professional-experience
+---------------*/
 
 
 
