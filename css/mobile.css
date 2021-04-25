@@ -6,7 +6,7 @@
 body{
     margin: 0;
     background-color: var(--whiteColor);
-    height: 1800px;
+    height: 8000px;
 }
 
 
@@ -435,6 +435,7 @@ Start Skill
     padding: 20px;
     border: 3px solid;
     border-radius: 20px;
+    
 
     
     
@@ -579,8 +580,68 @@ End Skill
 }
 
 /*---------------
-End  professional-experience
+Contact Link Start
 ---------------*/
+.contact-links{
+    background-color: green;
+    text-align: center;
+   
+}
+.media-buttons button{
+    height: 40px;
+    width: 40px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.media-buttons button:hover{
+    background-color: gray;
+}
+.media-buttons button i{
+    color: white;
+    font-size: 18px;
+    
+}
+
+.contact-links::after{
+    content: '';
+    display: table;
+    clear: both;
+    
+}
+/*---------------
+Contact Link End
+---------------*/
+
+
+/*---------------
+Footer Start
+---------------*/
+.footer{
+    background-color: black;
+    
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+
+
+.footer::after{
+    contain: '';
+    display: table;
+    clear: both;
+}
+/*---------------
+Footer End
+---------------*/
+
+
 
 
 

@@ -253,3 +253,28 @@ Start Skill
 End Skill
 ---------------*/
 
+/*---------------
+Footer Start
+---------------*/
+.footer-menu{
+    background-color: tomato;
+    height: 50px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    
+
+}
+
+.footer-desc{
+    height: 50px;
+    background-color: tomato;
+}
+
+/*---------------
+Footer End
+---------------*/
+
